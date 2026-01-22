@@ -1,4 +1,4 @@
-name: Deploy to Firebase Hosting
+name: Deploy Flutter Web to Firebase Hosting
 
 on:
   push:
@@ -12,10 +12,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # Install correct Flutter version
+      # Install Flutter 3.13 (Dart 3.8+)
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.13.0'
+
+      # Cache dependencies
+      - name: Cache Flutter Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
 
       # Get dependencies
       - run: flutter pub get
