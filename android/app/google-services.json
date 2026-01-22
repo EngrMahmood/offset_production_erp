@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "198523161337",
+    "project_id": "offset-production-erp",
+    "storage_bucket": "offset-production-erp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198523161337:android:fa6b5ca5fe2f8a9625f028",
+        "android_client_info": {
+          "package_name": "com.example.offset_production_erp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCXbJ4nQD6yHg2EVtFtlPuMB02VLAYsiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
